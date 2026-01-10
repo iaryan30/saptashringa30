@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+    :root {
+        /* Forest & Nature Palette */
+        --background: 40 20% 94%;
+        /* Soft Sand #EFEDE8 */
+        --foreground: 160 32% 18%;
+        /* Deep Forest Green #1E3D34 */
+
+        --card: 40 20% 97%;
+        --card-foreground: 160 32% 18%;
+
+        --popover: 40 20% 97%;
+        --popover-foreground: 160 32% 18%;
+
+        /* Deep Forest Green as primary */
+        --primary: 160 32% 18%;
+        --primary-foreground: 40 20% 96%;
+
+        /* Moss Green as secondary */
+        --secondary: 134 22% 29%;
+        --secondary-foreground: 40 20% 96%;
+
+        /* Warm Wood Brown */
+        --muted: 20 25% 33%;
+        --muted-foreground: 40 20% 85%;
+
+        /* Brass Accent */
+        --accent: 43 48% 52%;
+        --accent-foreground: 160 32% 12%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+
+        --border: 40 15% 85%;
+        --input: 40 15% 85%;
+        --ring: 43 48% 52%;
+
+        --radius: 0.5rem;
+
+        /* Custom tokens */
+        --forest-deep: 160 32% 18%;
+        --forest-moss: 134 22% 29%;
+        --wood-warm: 20 25% 33%;
+        --sand-soft: 40 20% 94%;
+        --sand-light: 40 20% 97%;
+        --brass: 43 48% 52%;
+        --brass-dark: 43 48% 42%;
+
+        /* Gradients */
+        --gradient-forest: linear-gradient(135deg, hsl(160 32% 18%) 0%, hsl(134 22% 29%) 100%);
+        --gradient-sunset: linear-gradient(180deg, hsl(40 20% 94% / 0) 0%, hsl(40 20% 94%) 100%);
+        --gradient-overlay: linear-gradient(180deg, hsl(160 32% 8% / 0.3) 0%, hsl(160 32% 8% / 0.7) 100%);
+
+        /* Shadows */
+        --shadow-soft: 0 4px 20px -4px hsl(160 32% 18% / 0.15);
+        --shadow-elevated: 0 12px 40px -8px hsl(160 32% 18% / 0.2);
+        --shadow-brass: 0 4px 20px -4px hsl(43 48% 52% / 0.3);
+
+        --sidebar-background: 40 20% 96%;
+        --sidebar-foreground: 160 32% 18%;
+        --sidebar-primary: 160 32% 18%;
+        --sidebar-primary-foreground: 40 20% 96%;
+        --sidebar-accent: 134 22% 29%;
+        --sidebar-accent-foreground: 40 20% 96%;
+        --sidebar-border: 40 15% 85%;
+        --sidebar-ring: 43 48% 52%;
+    }
+
+    .dark {
+        --background: 160 32% 8%;
+        --foreground: 40 20% 94%;
+
+        --card: 160 32% 12%;
+        --card-foreground: 40 20% 94%;
+
+        --popover: 160 32% 12%;
+        --popover-foreground: 40 20% 94%;
+
+        --primary: 40 20% 94%;
+        --primary-foreground: 160 32% 18%;
+
+        --secondary: 134 22% 20%;
+        --secondary-foreground: 40 20% 94%;
+
+        --muted: 20 25% 20%;
+        --muted-foreground: 40 20% 70%;
+
+        --accent: 43 48% 52%;
+        --accent-foreground: 160 32% 8%;
+
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+
+        --border: 160 20% 20%;
+        --input: 160 20% 20%;
+        --ring: 43 48% 52%;
+
+        --sidebar-background: 160 32% 10%;
+        --sidebar-foreground: 40 20% 94%;
+        --sidebar-primary: 43 48% 52%;
+        --sidebar-primary-foreground: 160 32% 8%;
+        --sidebar-accent: 160 20% 18%;
+        --sidebar-accent-foreground: 40 20% 94%;
+        --sidebar-border: 160 20% 18%;
+        --sidebar-ring: 43 48% 52%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-background text-foreground font-sans antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-display;
+    }
+}
+
+@layer components {
+    .text-balance {
+        text-wrap: balance;
+    }
+
+    .hero-gradient {
+        background: linear-gradient(180deg, hsl(160 32% 8% / 0.4) 0%, hsl(160 32% 8% / 0.6) 50%, hsl(160 32% 8% / 0.75) 100%);
+    }
+
+    .brass-glow {
+        box-shadow: var(--shadow-brass);
+    }
+
+    .glass-effect {
+        @apply backdrop-blur-md;
+        background: hsl(var(--sand-soft) / 0.8);
+    }
+}
+
+@layer utilities {
+    .animate-fade-up {
+        animation: fadeUp 0.8s ease-out forwards;
+    }
+
+    .animate-fade-in {
+        animation: fadeIn 0.6s ease-out forwards;
+    }
+
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}

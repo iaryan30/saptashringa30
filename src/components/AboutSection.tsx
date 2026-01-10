@@ -49,7 +49,7 @@ export const AboutSection = () => {
                             <span className="block italic text-forest-moss">Love for the Wild</span>
                         </h2>
                         <p className="text-muted max-w-2xl mx-auto text-lg leading-relaxed">
-                            Nestled at the edge of Valmiki Tiger Reserve, our homestay is more than an escape—
+                            Nestled at the edge of Valmiki Tiger Reserve, our home-stay is more than an escape—
                             it's a bridge between modern comfort and ancient wilderness. Here, every sunrise
                             brings a new story, and every night sky holds infinite wonder.
                         </p>

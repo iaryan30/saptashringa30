@@ -19,6 +19,7 @@ export const Footer = () => {
                             <div className="flex gap-4">
                                 <a
                                     href="https://www.instagram.com/saptashringa_valmikitigerresrv/"
+                                    target="_blank"
                                     className="w-10 h-10 rounded-full bg-sand-light/10 flex items-center justify-center text-sand-light/70 hover:bg-brass hover:text-accent-foreground transition-all"
                                 >
                                     <Instagram size={18} />

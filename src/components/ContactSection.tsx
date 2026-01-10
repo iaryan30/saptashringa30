@@ -7,17 +7,17 @@ const contactInfo = [
     {
         icon: MapPin,
         label: "Location",
-        value: "Near Valmiki Tiger Reserve, West Champaran, Bihar 845457",
+        value: "Saptashringa, Piprakutti, Valmikinagar, Bagaha 2, West Champaran, Bihar-845107",
     },
     {
         icon: Phone,
         label: "Phone",
-        value: "+91 98765 43210",
+        value: "+91 9122261611",
     },
     {
         icon: Mail,
         label: "Email",
-        value: "stay@saptashringa.com",
+        value: "saptashringa@gmail.com",
     },
     {
         icon: Clock,

@@ -57,13 +57,14 @@ export const AccommodationsSection = () => {
                                 Stay With Us
                             </p>
                             <h2 className="font-display text-4xl md:text-5xl text-sand-light mb-6">
-                                Forest View
-                                <span className="block italic text-brass">Cottages</span>
+                                Presidential
+                                <span className="block italic text-brass">Suites</span>
                             </h2>
                             <p className="text-sand-light/80 text-lg leading-relaxed mb-8">
-                                Our handcrafted wooden cottages blend seamlessly with the surrounding forest.
-                                Wake to the symphony of birdsong, enjoy your morning chai on the private veranda,
-                                and fall asleep to the gentle rustle of sal trees.
+                                Each view is designed to give panaromic view of the himalayan shivalik. 
+                                Our Presidential suites offers everything you and your family might need for the utmost comfort luxury and convenience.
+                                It offers king size bed, 4 seater living space, 
+                                a separate dresser room, a walking rain shower, a bath tub and a private balcony.
                             </p>
 
                             {/* Amenities */}
@@ -82,19 +83,19 @@ export const AccommodationsSection = () => {
                             <ul className="space-y-3 mb-10 text-sand-light/70">
                                 <li className="flex items-center gap-2">
                                     <span className="w-1.5 h-1.5 bg-brass rounded-full" />
-                                    King-size bed with premium organic linens
+                                    Sink into the comfort with our King-size bed
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <span className="w-1.5 h-1.5 bg-brass rounded-full" />
-                                    En-suite bathroom with rainforest shower
+                                    En-suite bathroom with bathtub and rain shower
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <span className="w-1.5 h-1.5 bg-brass rounded-full" />
-                                    Private veranda overlooking the forest
+                                    Private veranda overlooking the himalayas and pool
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <span className="w-1.5 h-1.5 bg-brass rounded-full" />
-                                    Complimentary breakfast & evening tea
+                                    4 seater living space, work desk and dressing room
                                 </li>
                             </ul>
 

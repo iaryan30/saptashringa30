@@ -12,16 +12,16 @@ const values = [
     {
         icon: Heart,
         title: "Warm Hospitality",
-        description: "Personalized service that feels like family, not a hotel",
+        description: "Personalized service that feels like family, not a hotel with ",
     },
     {
         icon: Users,
         title: "Experience",
-        description: "Swimming pool, exotic bath tub, kids play pool, BBQ, watch movies under the stars",
+        description: "Swimming pool, exotic bathtubs, kids play pool, BBQ, watch movies under the stars and cultural events ",
     },
     {
         icon: TreeDeciduous,
-        title: "Beyond Litti Chokha",
+        title: "Heritage Food",
         description: "Curated fusion food from Champaran, Thakali, and Tharu Tribe",
     },
 ];

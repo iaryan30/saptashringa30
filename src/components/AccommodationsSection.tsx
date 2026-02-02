@@ -61,10 +61,8 @@ export const AccommodationsSection = () => {
                                 <span className="block italic text-brass">Suites</span>
                             </h2>
                             <p className="text-sand-light/80 text-lg leading-relaxed mb-8">
-                                Each view is designed to give panaromic view of the himalayan shivalik. 
+                                Each room is designed to give panaromic view of the Himalayan Shivalik. 
                                 Our Presidential suites offers everything you and your family might need for the utmost comfort luxury and convenience.
-                                It offers king size bed, 4 seater living space, 
-                                a separate dresser room, a walking rain shower, a bath tub and a private balcony.
                             </p>
 
                             {/* Amenities */}

@@ -2,11 +2,11 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Maximize2, Users, Wifi, Wind } from "lucide-react";
 import { Button } from "./ui/button";
-import cottageInterior from "@/assets/cottage-interior.jpg";
+import Interior_room from "@/assets/Interiors_room.jpg";
 
 const amenities = [
     { icon: Maximize2, label: "400 sq ft" },
-    { icon: Users, label: "2-4 Guests" },
+    { icon: Users, label: "2-3 Guests" },
     { icon: Wifi, label: "Free WiFi" },
     { icon: Wind, label: "AC & Heating" },
 ];
@@ -29,7 +29,7 @@ export const AccommodationsSection = () => {
                         >
                             <div className="relative overflow-hidden rounded-2xl">
                                 <img
-                                    src={cottageInterior}
+                                    src={Interior_room}
                                     alt="Luxury cottage interior with forest views"
                                     className="w-full h-[500px] object-cover"
                                 />
@@ -42,8 +42,8 @@ export const AccommodationsSection = () => {
                                 transition={{ duration: 0.6, delay: 0.4 }}
                                 className="absolute -bottom-6 -right-6 bg-brass text-accent-foreground px-6 py-4 rounded-xl shadow-brass"
                             >
-                                <p className="font-display text-2xl font-semibold">₹8,500</p>
-                                <p className="text-xs opacity-80">per night</p>
+                                <p className="font-display text-2xl font-semibold">₹2,500-3,500</p>
+                                <p className="text-xs opacity-80">per night + inaugral discount</p>
                             </motion.div>
                         </motion.div>
 
@@ -89,7 +89,7 @@ export const AccommodationsSection = () => {
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <span className="w-1.5 h-1.5 bg-brass rounded-full" />
-                                    Private veranda overlooking the himalayas and pool
+                                    Private veranda overlooking the Himalayas and pool
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <span className="w-1.5 h-1.5 bg-brass rounded-full" />

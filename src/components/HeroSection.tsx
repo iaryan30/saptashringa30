@@ -40,7 +40,7 @@ export const HeroSection = () => {
                         className="font-display text-5xl md:text-7xl lg:text-8xl text-sand-light font-medium leading-tight mb-6"
                     >
                         Where Wilderness
-                        <span className="block italic text-brass">Meets Serenity</span>
+                        <span className="block italic text-brass">Meets Luxury</span>
                     </motion.h1>
 
                     <motion.p

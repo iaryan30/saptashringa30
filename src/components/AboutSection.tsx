@@ -6,8 +6,8 @@ import { Leaf, Heart, Users, TreeDeciduous } from "lucide-react";
 const values = [
     {
         icon: Leaf,
-        title: "Eco-Conscious",
-        description: "Solar-powered, zero-waste practices, and locally sourced materials",
+        title: "Luxurious",
+        description: "Presidential Suits that offers everything you need.",
     },
     {
         icon: Heart,
@@ -16,13 +16,13 @@ const values = [
     },
     {
         icon: Users,
-        title: "Community First",
-        description: "Supporting local artisans, guides, and conservation efforts",
+        title: "Experience",
+        description: "Swimming pool, exotic bath tub, kids play pool, BBQ, watch movies under the stars",
     },
     {
         icon: TreeDeciduous,
-        title: "Nature Immersion",
-        description: "Designed to connect you deeply with the forest ecosystem",
+        title: "Beyond Litti Chokha",
+        description: "Curated fusion food from Champaran, Thakali, and Tharu Tribe",
     },
 ];
 
@@ -49,9 +49,8 @@ export const AboutSection = () => {
                             <span className="block italic text-forest-moss">Love for the Wild</span>
                         </h2>
                         <p className="text-muted max-w-2xl mx-auto text-lg leading-relaxed">
-                            Nestled at the edge of Valmiki Tiger Reserve, our home-stay is more than an escape—
-                            it's a bridge between modern comfort and ancient wilderness. Here, every sunrise
-                            brings a new story, and every night sky holds infinite wonder.
+                            Nestled at the edge of Valmiki Tiger Reserve, our holiday home is more than an escape—
+                            it's a bridge between slow luxury, modern comfort and ancient wilderness.
                         </p>
                     </motion.div>
 

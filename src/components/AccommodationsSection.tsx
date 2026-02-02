@@ -30,7 +30,7 @@ export const AccommodationsSection = () => {
                             <div className="relative overflow-hidden rounded-2xl">
                                 <img
                                     src={Interior_room}
-                                    alt="Luxury cottage interior with forest views"
+                                    alt="Luxury rooms withHimalaya and pool views"
                                     className="w-full h-[500px] object-cover"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-forest-deep/50 to-transparent" />

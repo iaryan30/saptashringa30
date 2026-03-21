@@ -7,7 +7,7 @@ const contactInfo = [
     {
         icon: MapPin,
         label: "Location",
-         url: "https://maps.app.goo.gl/YsJvjrdTSytKhhUq7",
+        url: "https://maps.app.goo.gl/EwscaVcJ4pguiCcSA",
         value: "Saptashringa, Piprakutti, Valmikinagar, Bagaha 2, West Champaran, Bihar-845107",
     },
     {

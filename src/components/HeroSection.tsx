@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
-import heroImage from "@/assets/website-banner.jpg";
+import heroImage from "@/assets/website_banner.jpg";
 
 export const HeroSection = () => {
     return (

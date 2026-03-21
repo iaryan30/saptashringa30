@@ -42,7 +42,7 @@ export const AccommodationsSection = () => {
                                 transition={{ duration: 0.6, delay: 0.4 }}
                                 className="absolute -bottom-6 -right-6 bg-brass text-accent-foreground px-6 py-4 rounded-xl shadow-brass"
                             >
-                                <p className="font-display text-2xl font-semibold">₹2,500-3,500</p>
+                                <p className="font-display text-2xl font-semibold">₹3,500-4,000</p>
                                 <p className="text-xs opacity-80">per night + inaugral discount</p>
                             </motion.div>
                         </motion.div>

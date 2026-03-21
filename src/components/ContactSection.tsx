@@ -81,58 +81,93 @@ export const ContactSection = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="bg-sand-light/5 backdrop-blur-sm rounded-2xl p-8 border border-sand-light/10"
                         >
-                            <form className="space-y-6">
-                                <div className="grid sm:grid-cols-2 gap-6">
-                                    <div>
-                                        <label className="block text-sand-light/70 text-sm mb-2">Full Name</label>
-                                        <input
-                                            type="text"
-                                            className="w-full bg-sand-light/10 border border-sand-light/20 rounded-lg px-4 py-3 text-sand-light placeholder:text-sand-light/40 focus:outline-none focus:border-brass transition-colors"
-                                            placeholder="John Doe"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label className="block text-sand-light/70 text-sm mb-2">Email</label>
-                                        <input
-                                            type="email"
-                                            className="w-full bg-sand-light/10 border border-sand-light/20 rounded-lg px-4 py-3 text-sand-light placeholder:text-sand-light/40 focus:outline-none focus:border-brass transition-colors"
-                                            placeholder="john@example.com"
-                                        />
-                                    </div>
-                                </div>
+                          <form className="space-y-6">
+    <div className="grid sm:grid-cols-2 gap-6">
+        <div>
+            <label className="block text-sand-light/70 text-sm mb-2">Full Name</label>
+            <input
+                type="text"
+                className="w-full bg-sand-light/10 border border-sand-light/20 rounded-lg px-4 py-3 text-sand-light placeholder:text-sand-light/40 focus:outline-none focus:border-brass transition-colors"
+                placeholder="John Doe"
+            />
+        </div>
+        <div>
+            <label className="block text-sand-light/70 text-sm mb-2">Email</label>
+            <input
+                type="email"
+                className="w-full bg-sand-light/10 border border-sand-light/20 rounded-lg px-4 py-3 text-sand-light placeholder:text-sand-light/40 focus:outline-none focus:border-brass transition-colors"
+                placeholder="john@example.com"
+            />
+        </div>
+    </div>
 
-                                <div className="grid sm:grid-cols-2 gap-6">
-                                    <div>
-                                        <label className="block text-sand-light/70 text-sm mb-2">Check-in Date</label>
-                                        <input
-                                            type="date"
-                                            className="w-full bg-sand-light/10 border border-sand-light/20 rounded-lg px-4 py-3 text-sand-light focus:outline-none focus:border-brass transition-colors"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label className="block text-sand-light/70 text-sm mb-2">Guests</label>
-                                        <select className="w-full bg-sand-light/10 border border-sand-light/20 rounded-lg px-4 py-3 text-sand-light focus:outline-none focus:border-brass transition-colors">
-                                            <option value="1">1 Guest</option>
-                                            <option value="2">2 Guests</option>
-                                            <option value="3">3 Guests</option>
-                                            <option value="4">4 Guests</option>
-                                        </select>
-                                    </div>
-                                </div>
+    <div>
+        <label className="block text-sand-light/70 text-sm mb-2">Phone Number</label>
+        <div className="mb-3">
+            <select className="w-full bg-sand-light/10 border border-sand-light/20 rounded-lg px-3 py-3 text-sand-light focus:outline-none focus:border-brass transition-colors">
+                <option value="+95">🇲🇲 +95 Myanmar</option>
+                <option value="+855">🇰🇭 +855 Cambodia</option>
+                <option value="+856">🇱🇦 +856 Laos</option>
+                <option value="+66">🇹🇭 +66 Thailand</option>
+                <option value="+94">🇱🇰 +94 Sri Lanka</option>
+                <option value="+975">🇧🇹 +975 Bhutan</option>
+                <option value="+976">🇲🇳 +976 Mongolia</option>
+                <option value="+886">🇹🇼 +886 Taiwan</option>
+                <option value="+81">🇯🇵 +81 Japan</option>
+                <option value="+82">🇰🇷 +82 South Korea</option>
+                <option value="+86">🇨🇳 +86 China</option>
+                <option value="+84">🇻🇳 +84 Vietnam</option>
+                <option value="+1">🇺🇸 +1 USA</option>
+                <option value="+44">🇬🇧 +44 UK</option>
+                <option value="+91">🇮🇳 +91 India</option>
+                <option value="+61">🇦🇺 +61 Australia</option>
+                <option value="+33">🇫🇷 +33 France</option>
+                <option value="+49">🇩🇪 +49 Germany</option>
+                <option value="+971">🇦🇪 +971 UAE</option>
+                <option value="+65">🇸🇬 +65 Singapore</option>
+            </select>
+        </div>
+        <div>
+            <input
+                type="tel"
+                className="w-full bg-sand-light/10 border border-sand-light/20 rounded-lg px-4 py-3 text-sand-light placeholder:text-sand-light/40 focus:outline-none focus:border-brass transition-colors"
+                placeholder="123 456 7890"
+            />
+        </div>
+    </div>
 
-                                <div>
-                                    <label className="block text-sand-light/70 text-sm mb-2">Message</label>
-                                    <textarea
-                                        rows={4}
-                                        className="w-full bg-sand-light/10 border border-sand-light/20 rounded-lg px-4 py-3 text-sand-light placeholder:text-sand-light/40 focus:outline-none focus:border-brass transition-colors resize-none"
-                                        placeholder="Tell us about your trip plans..."
-                                    />
-                                </div>
+    <div className="grid sm:grid-cols-2 gap-6">
+        <div>
+            <label className="block text-sand-light/70 text-sm mb-2">Check-in Date</label>
+            <input
+                type="date"
+                className="w-full bg-sand-light/10 border border-sand-light/20 rounded-lg px-4 py-3 text-sand-light focus:outline-none focus:border-brass transition-colors"
+            />
+        </div>
+        <div>
+            <label className="block text-sand-light/70 text-sm mb-2">Guests</label>
+            <select className="w-full bg-sand-light/10 border border-sand-light/20 rounded-lg px-4 py-3 text-sand-light focus:outline-none focus:border-brass transition-colors">
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+            </select>
+        </div>
+    </div>
 
-                                <Button variant="hero" size="xl" className="w-full">
-                                    Send Inquiry
-                                </Button>
-                            </form>
+    <div>
+        <label className="block text-sand-light/70 text-sm mb-2">Message</label>
+        <textarea
+            rows={4}
+            className="w-full bg-sand-light/10 border border-sand-light/20 rounded-lg px-4 py-3 text-sand-light placeholder:text-sand-light/40 focus:outline-none focus:border-brass transition-colors resize-none"
+            placeholder="Tell us about your trip plans..."
+        />
+    </div>
+
+    <Button variant="hero" size="xl" className="w-full">
+        Send Inquiry
+    </Button>
+</form>
                         </motion.div>
                     </div>
                 </div>

@@ -105,6 +105,8 @@ export const ContactSection = () => {
                                                 <select
                                                     className="bg-sand-light/10 border border-sand-light/20 rounded-l-lg px-3 py-3 text-sand-light focus:outline-none focus:border-brass transition-colors"
                                                 >
+                                                    
+                                                    <option value="+91">🇮🇳 +91 India</option>
                                                     <option value="+95">🇲🇲 +95 Myanmar</option>
                                                     <option value="+855">🇰🇭 +855 Cambodia</option>
                                                     <option value="+856">🇱🇦 +856 Laos</option>
@@ -119,7 +121,6 @@ export const ContactSection = () => {
                                                     <option value="+84">🇻🇳 +84 Vietnam</option>
                                                     <option value="+1">🇺🇸 +1 USA</option>
                                                     <option value="+44">🇬🇧 +44 UK</option>
-                                                    <option value="+91">🇮🇳 +91 India</option>
                                                     <option value="+61">🇦🇺 +61 Australia</option>
                                                     <option value="+33">🇫🇷 +33 France</option>
                                                     <option value="+49">🇩🇪 +49 Germany</option>
@@ -129,7 +130,7 @@ export const ContactSection = () => {
                                                 <input
                                                     type="tel"
                                                     className="w-full bg-sand-light/10 border border-sand-light/20 border-l-0 rounded-r-lg px-4 py-3 text-sand-light placeholder:text-sand-light/40 focus:outline-none focus:border-brass transition-colors"
-                                                    placeholder="123 456 7890"
+                                                    placeholder:text-lg="123 456 7890"
                                                 />
                                             </div>
                                         </div>

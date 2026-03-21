@@ -31,7 +31,9 @@ export const Footer = () => {
                                     <Facebook size={18} />
                                 </a>
                                 <a
-                                    href="#"
+                                    href="https://mail.google.com/mail/?view=cm&to=saptashringa@gmail.com" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
                                     className="w-10 h-10 rounded-full bg-sand-light/10 flex items-center justify-center text-sand-light/70 hover:bg-brass hover:text-accent-foreground transition-all"
                                 >
                                     <Mail size={18} />

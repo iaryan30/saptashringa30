@@ -34,7 +34,7 @@ export const Header = () => {
                 : "bg-transparent py-6"
                 }`}
         >
-            <div className="container mx-auto px-6 flex items-center justify-between">
+            <div className="container mx-auto px-8 flex items-center justify-between">
                 {/* Logo */}
                 <a href="#home" className="flex items-center gap-3">
                     <img

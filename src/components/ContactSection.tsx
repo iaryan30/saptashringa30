@@ -39,10 +39,10 @@ export const ContactSection = () => {
         setStatus("sending");
 
         emailjs.sendForm(
-            "YOUR_SERVICE_ID",    // replace with your EmailJS Service ID
-            "YOUR_TEMPLATE_ID",   // replace with your EmailJS Template ID
+            "service_uk2smgn",    // replace with your EmailJS Service ID
+            "template_rmopjsq",   // replace with your EmailJS Template ID
             formRef.current,
-            "YOUR_PUBLIC_KEY"     // replace with your EmailJS Public Key
+            "WXRTNXAWvR4Q4UoJ8"     // replace with your EmailJS Public Key
         ).then(() => {
             setStatus("success");
         }).catch(() => {

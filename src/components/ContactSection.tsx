@@ -130,7 +130,7 @@ export const ContactSection = () => {
                                             name="country_code"
                                             className="bg-sand-light/10 border border-sand-light/20 rounded-l-lg px-3 py-3 text-sand-light focus:outline-none focus:border-brass transition-colors"
                                         >
-                                            <option value="+91">🇮🇳 +91 India</option>
+                                            <option value="+91" selected>🇮🇳 +91 India</option>
                                             <option value="+95">🇲🇲 +95 Myanmar</option>
                                             <option value="+855">🇰🇭 +855 Cambodia</option>
                                             <option value="+856">🇱🇦 +856 Laos</option>

@@ -44,7 +44,7 @@ export const Header = () => {
                     />
                     <span className={`font-display text-2xl font-semibold transition-colors duration-300 ${isScrolled ? "text-forest-deep" : "text-sand-light"
                         }`}>
-                        Saptashringa
+                        SAPTASHRINGA- A WILDERNESS RETREAT
                     </span>
                 </a>
 

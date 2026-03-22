@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Instagram, Facebook, Mail, Map } from "lucide-react";
+import { Instagram, Facebook, Mail } from "lucide-react";
 
 export const Footer = () => {
     return (
@@ -39,12 +39,18 @@ export const Footer = () => {
                                     <Mail size={18} />
                                 </a>
                                 <a
-                                    href="https://maps.app.goo.gl/EwscaVcJ4pguiCcSA"
+                                   href="https://maps.app.goo.gl/EwscaVcJ4pguiCcSA"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="w-10 h-10 rounded-full bg-sand-light/10 flex items-center justify-center text-sand-light/70 hover:bg-brass hover:text-accent-foreground transition-all"
                                 >
-                                    <Map size={18} />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 92.3 132.3" fill="currentColor">
+                                        <path fill="#1a73e8" d="M60.2 2.2C55.8.8 51 0 46.1 0 32 0 19.3 6.4 10.6 16.5l21.8 18.3L60.2 2.2z"/>
+                                        <path fill="#ea4335" d="M10.6 16.5C4 24.1 0 34.1 0 46.1c0 8.7 1.6 15.7 4.6 22l27.8-33.3-21.8-18.3z"/>
+                                        <path fill="#fbbc04" d="M46.2 28.5c9.8 0 17.6 7.8 17.6 17.6 0 4.3-1.6 8.3-4.2 11.4l.1-.1 27.5-32.9c-4.5-9.3-12.1-16.7-21-21.3L32.4 34.8c3.5-3.9 8.5-6.3 13.8-6.3z"/>
+                                        <path fill="#34a853" d="M46.2 63.7c-9.8 0-17.6-7.8-17.6-17.6 0-4.1 1.4-7.8 3.8-10.8L4.6 68.1c4.8 10.2 12.8 19.5 23 28.9l28.7-34.3c-3.5 0.6-6.9-.9-10.1-1z" />
+                                        <path fill="#1a73e8" d="M56.6 113.2c12.6-20.3 35.7-42.8 35.7-67.1 0-9.1-2.4-17.7-6.5-25.2L27.6 96.9c2.6 2.4 5.3 4.9 7.9 7.6 9.6 10 14.9 19.7 16.8 27.8.4 1.7 2.6 1.7 3 0 .3-1.5.8-3 1.3-19.1z"/>
+                                    </svg>
                                 </a>
                             </div>
                         </div>

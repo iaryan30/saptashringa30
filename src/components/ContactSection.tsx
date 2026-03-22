@@ -8,7 +8,6 @@ const contactInfo = [
     {
         icon: MapPin,
         label: "Location",
-        url: "https://maps.app.goo.gl/EwscaVcJ4pguiCcSA",
         value: "Saptashringa, Piprakutti, Valmikinagar, Bagaha 2, West Champaran, Bihar-845107",
     },
     {
@@ -95,17 +94,7 @@ export const ContactSection = () => {
                                         </div>
                                         <div>
                                             <p className="text-sand-light/60 text-sm mb-1">{info.label}</p>
-                                            {info.url ? (
-                                                href={info.url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-sand-light hover:text-brass transition-colors underline underline-offset-2"
-                                            >
-                                                {info.value}
-                                            </a>
-                                        ) : (
                                             <p className="text-sand-light">{info.value}</p>
-                                        )}
                                         </div>
                                     </div>
                                 ))}

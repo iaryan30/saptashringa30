@@ -34,21 +34,30 @@ export const ContactSection = () => {
     const isInView = useInView(ref, { once: true, margin: "-100px" });
     const [status, setStatus] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setStatus("sending");
+   const handleSubmit = (e) => {
+    e.preventDefault();
 
-        emailjs.sendForm(
-            "service_uk2smgn",    // replace with your EmailJS Service ID
-            "template_rmopjsq",   // replace with your EmailJS Template ID
-            formRef.current,
-            "WXRTNXAWvR4Q4UoJ8"     // replace with your EmailJS Public Key
-        ).then(() => {
-            setStatus("success");
-        }).catch(() => {
-            setStatus("error");
-        });
-    };
+    const email = e.target.from_email.value.trim();
+    const phone = e.target.phone.value.trim();
+
+    if (!email && !phone) {
+        setStatus("validation_error");
+        return;
+    }
+
+    setStatus("sending");
+
+    emailjs.sendForm(
+        "service_uk2smgn",
+        "template_rmopjsq",
+        formRef.current,
+        "WXRTNXAWvR4Q4UoJ8"
+    ).then(() => {
+        setStatus("success");
+    }).catch(() => {
+        setStatus("error");
+    });
+};
 
     return (
         <section id="contact" className="py-24 md:py-32 bg-forest-deep relative overflow-hidden">
@@ -199,6 +208,9 @@ export const ContactSection = () => {
                                 )}
                                 {status === "error" && (
                                     <p className="text-red-400 text-sm">❌ Something went wrong. Please try again.</p>
+                                )}
+                                {status === "validation_error" && (
+                                    <p className="text-yellow-400 text-sm">⚠️ Please enter at least your email or phone number.</p>
                                 )}
 
                                 <Button

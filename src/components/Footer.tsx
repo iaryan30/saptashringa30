@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Instagram, Facebook, Mail } from "lucide-react";
+import { Instagram, Facebook, Mail, Map } from "lucide-react";
 
 export const Footer = () => {
     return (
@@ -37,6 +37,14 @@ export const Footer = () => {
                                     className="w-10 h-10 rounded-full bg-sand-light/10 flex items-center justify-center text-sand-light/70 hover:bg-brass hover:text-accent-foreground transition-all"
                                 >
                                     <Mail size={18} />
+                                </a>
+                                <a
+                                    href="https://maps.app.goo.gl/EwscaVcJ4pguiCcSA"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-10 h-10 rounded-full bg-sand-light/10 flex items-center justify-center text-sand-light/70 hover:bg-brass hover:text-accent-foreground transition-all"
+                                >
+                                    <Map size={18} />
                                 </a>
                             </div>
                         </div>

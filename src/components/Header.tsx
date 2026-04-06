@@ -62,7 +62,7 @@ export const Header = () => {
                     ))}
                     <a href="#contact">
                         <Button variant={isScrolled ? "hero" : "heroOutline"} size="lg">
-                            Book Now
+                           Contact Us for Best Offers
                         </Button>
                     </a>
                 </nav>
@@ -100,7 +100,7 @@ export const Header = () => {
                             ))}
                       <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
                         <Button variant="hero" size="lg" className="mt-4">
-                            Book Now
+                            Contact Us for Best Offers
                         </Button>
                     </a>
                         </nav>

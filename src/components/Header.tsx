@@ -60,9 +60,11 @@ export const Header = () => {
                             {link.name}
                         </a>
                     ))}
-                    <Button variant={isScrolled ? "hero" : "heroOutline"} size="lg">
-                        Book Now
-                    </Button>
+                    <a href="#contact">
+                        <Button variant={isScrolled ? "hero" : "heroOutline"} size="lg">
+                            Book Now
+                        </Button>
+                    </a>
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -96,11 +98,11 @@ export const Header = () => {
                                     {link.name}
                                 </a>
                             ))}
-                           <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-                            <Button variant="hero" size="lg" className="mt-4">
-                                Contact Us for Best Offers
-                            </Button>
-                        </a>
+                      <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Button variant="hero" size="lg" className="mt-4">
+                            Book Now
+                        </Button>
+                    </a>
                         </nav>
                     </motion.div>
                 )}

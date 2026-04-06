@@ -14,7 +14,7 @@ const testimonials = [
     {
         name: "Priya & Arun",
         location: "Mumbai",
-        text: "The perfect escape from city chaos. We spotted a tiger on our first safari, and the stargazing from our cottage veranda was magical. Already planning our return!",
+        text: "We had a wonderful and memorable stay at Saptashringa Holiday Home. We truly enjoyed every moment there. The staff is extremely friendly, polite, and well-behaved, making us feel comfortable throughout our stay. The rooms are luxurious, well-maintained, and offer a beautiful experience. The swimming pool is quite spacious and definitely one of the key highlights of the property. One of the most amazing features is the breathtaking view — you can clearly see all seven Shivalik mountain peaks right from your room, which makes the stay even more special. A special mention to Chef Ramkrishna, who is an amazing person and served delicious food with great care. Manager Mukesh ji is truly a gem of this hotel, always helpful and attentive. Lastly, heartfelt thanks to the owners, Mr. and Mrs. Singh, who are wonderful, humble, and down-to-earth people. Overall, it was a fantastic experience, and we would highly recommend this place to everyone looking for a peaceful and luxurious stay.",
         rating: 5,
     },
     {
@@ -135,7 +135,7 @@ export const TestimonialsSection = () => {
                         </a>
 
                         <a
-                            href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20saw%20your%20reviews%20and%20want%20to%20check%20availability"
+                            href="https://wa.me/919122261611?text=Hi%2C%20I%20saw%20your%20reviews%20and%20want%20to%20check%20availability"
                             target="_blank"
                             className="text-brass text-sm hover:underline"
                         >

@@ -59,12 +59,28 @@ export const HeroSection = () => {
                         transition={{ duration: 0.8, delay: 1.1 }}
                         className="flex flex-col sm:flex-row gap-4 justify-center"
                     >
-                        <Button variant="hero" size="xl">
-                            Reserve Your Stay
-                        </Button>
-                        <Button variant="heroOutline" size="xl">
-                            Explore Experiences
-                        </Button>
+                            <a href="https://www.makemytrip.com/hotels/hotel-details/?checkin=date_7&checkout=date_8&city=abc&country=in&currency=INR&filterData=FREE_BREAKFAST_AVAIL%7CBREAKFAST_AVAIL&hotelId=202603242221084502&locusId=abc&locusType=city&roomStayQualifier=2e0e&source=INGO" target="_blank" rel="noopener noreferrer">
+                                <Button variant="hero" size="xl" className="flex items-center gap-2">
+                                    <img
+                                        src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png"
+                                        alt="MakeMyTrip"
+                                        className="h-5 w-auto object-contain"
+                                        onError={(e) => { e.target.style.display = 'none' }}
+                                    />
+                                    Book on MakeMyTrip
+                                </Button>
+                            </a>
+                        <a href="https://www.goibibo.com/hotels/Saptashringa-Holiday-Home-hotel-in-Bettiah-202603242221084502/?hquery=%7B%22ci%22%3A%2220260413%22%2C%22co%22%3A%2220260414%22%7D" target="_blank" rel="noopener noreferrer">
+                            <Button variant="heroOutline" size="xl" className="flex items-center gap-2">
+                                <img
+                                    src="https://www.goibibo.com/favicon.ico"
+                                    alt="Goibibo"
+                                    className="h-5 w-5 object-contain"
+                                    onError={(e) => { e.target.style.display = 'none' }}
+                                />
+                                Book on Goibibo
+                            </Button>
+                        </a>
                     </motion.div>
                 </motion.div>
             </div>

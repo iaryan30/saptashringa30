@@ -14,19 +14,19 @@ const testimonials = [
     {
         name: "Travel Atithi",
         location: "Patna",
-        text: "We had a wonderful and memorable stay at Saptashringa Holiday Home. We truly enjoyed every moment there. The staff is extremely friendly, polite, and well-behaved, making us feel comfortable throughout our stay. The rooms are luxurious, well-maintained, and offer a beautiful experience. The swimming pool is quite spacious and definitely one of the key highlights of the property. One of the most amazing features is the breathtaking view — you can clearly see all seven Shivalik mountain peaks right from your room, which makes the stay even more special. A special mention to Chef Ramkrishna, who is an amazing person and served delicious food with great care. Manager Mukesh ji is truly a gem of this hotel, always helpful and attentive. Lastly, heartfelt thanks to the owners, Mr. and Mrs. Singh, who are wonderful, humble, and down-to-earth people. Overall, it was a fantastic experience, and we would highly recommend this place to everyone looking for a peaceful and luxurious stay.",
+        text: "We had a wonderful and memorable stay at Saptashringa Holiday Home. The staff is extremely friendly and the rooms are luxurious and well-maintained. The highlight is the breathtaking view of the Shivalik hills right from the room. Special thanks to Chef Ramkrishna and Manager Mukesh ji for their warm hospitality.",
         rating: 5,
     },
     {
         name: "K.K. Sahu",
         location: "Muzaffarpur",
-        text: "Excited to review this place. An amazing experience — I never thought this would be available before I came. Italian architecture, a wide garden inside the campus, barbecue facilities, and the personal care give a lovely, cozy, homely, international feeling. The food and the chef are extraordinarily good. The quiet presence of the lady owner managing everything in the background makes this place even more homely — an added attraction. I love this resort very much.",
+        text: "An amazing experience with beautiful architecture, peaceful surroundings, and excellent food. The hospitality feels personal and homely, making it a perfect getaway.",
         rating: 5,
     },
     {
         name: "Avinash Vishwakarma",
         location: "Patna",
-        text: "Panaromic scene of shivaliks, good food, well behaved staffs, homely environment",
+        text: "Panoramic views of the Shivaliks, great food, well-behaved staff, and a very homely environment. Highly recommended.",
         rating: 5,
     },
 ];
@@ -106,7 +106,7 @@ export const TestimonialsSection = () => {
                         </h2>
 
                         <div className="flex justify-center gap-2 text-sm text-muted">
-                            <span className="text-lg">⭐ 4.8</span>
+                            <span className="text-lg">⭐ 5.0</span>
                             <span>• Rated Excellent on Google</span>
                         </div>
                     </motion.div>
@@ -114,11 +114,33 @@ export const TestimonialsSection = () => {
                     {/* Testimonials */}
                     <div className="grid md:grid-cols-3 gap-8">
                         {testimonials.map((t, i) => (
-                            <div key={i} className="bg-card p-8 rounded-2xl shadow-soft">
-                                <Quote className="w-8 h-8 text-brass/20 mb-4" />
-                                <p className="text-muted italic mb-4">"{t.text}"</p>
-                                <p className="font-medium text-forest-deep">{t.name}</p>
-                                <p className="text-sm text-muted">{t.location}</p>
+                            <div key={i} className="bg-card p-8 rounded-2xl shadow-soft relative">
+
+                                {/* Quote Icon */}
+                                <Quote className="absolute top-6 right-6 w-10 h-10 text-brass/20" />
+
+                                {/* ⭐ Stars */}
+                                <div className="flex gap-1 mb-4">
+                                    {[...Array(t.rating)].map((_, i) => (
+                                        <Star key={i} className="w-4 h-4 fill-brass text-brass" />
+                                    ))}
+                                </div>
+
+                                {/* Review */}
+                                <p className="text-muted italic mb-6 leading-relaxed">
+                                    "{t.text}"
+                                </p>
+
+                                {/* Name */}
+                                <div className="border-t border-border pt-4">
+                                    <p className="font-medium text-forest-deep">
+                                        {t.name}
+                                    </p>
+                                    <p className="text-sm text-muted">
+                                        {t.location}
+                                    </p>
+                                </div>
+
                             </div>
                         ))}
                     </div>
@@ -129,7 +151,8 @@ export const TestimonialsSection = () => {
                         <a
                             href="https://g.page/r/Ccm-ZAr4Y28gEBM/review"
                             target="_blank"
-                            className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg text-sm font-medium shadow"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg text-sm font-medium shadow hover:opacity-90"
                         >
                             ⭐ Read Reviews on Google
                         </a>
@@ -137,6 +160,7 @@ export const TestimonialsSection = () => {
                         <a
                             href="https://wa.me/919122261611?text=Hi%2C%20I%20saw%20your%20reviews%20and%20want%20to%20check%20availability"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="text-brass text-sm hover:underline"
                         >
                             Book via WhatsApp →

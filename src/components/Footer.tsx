@@ -72,21 +72,31 @@ export const Footer = () => {
                             </ul>
                         </div>
 
-                        {/* Newsletter */}
+                    {/* Contact / WhatsApp */}
                         <div>
-                            <h4 className="text-sand-light font-medium mb-4">Stay Connected</h4>
+                            <h4 className="text-sand-light font-medium mb-4">Quick Connect</h4>
                             <p className="text-sand-light/60 text-sm mb-4">
-                                Subscribe for seasonal updates and exclusive offers.
+                                Book your stay or ask anything instantly.
                             </p>
-                            <div className="flex gap-2">
-                                <input
-                                    type="email"
-                                    placeholder="Your email"
-                                    className="flex-1 bg-sand-light/10 border border-sand-light/20 rounded-lg px-4 py-2 text-sm text-sand-light placeholder:text-sand-light/40 focus:outline-none focus:border-brass transition-colors"
-                                />
-                                <button className="bg-brass text-accent-foreground px-4 py-2 rounded-lg text-sm font-medium hover:bg-brass-dark transition-colors">
-                                    Join
-                                </button>
+                        
+                            <div className="flex flex-col gap-3">
+                                {/* WhatsApp */}
+                                <a
+                                    href="https://wa.me/919122261611?text=Hi%2C%20I%20want%20to%20book%20a%20stay%20at%20Saptashringa"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center gap-2 bg-brass text-accent-foreground px-4 py-2 rounded-lg text-sm font-medium hover:bg-brass-dark transition-all"
+                                >
+                                    Chat on WhatsApp
+                                </a>
+                        
+                                {/* Call */}
+                                <a
+                                    href="tel:+919122261611"
+                                    className="flex items-center justify-center gap-2 border border-sand-light/30 text-sand-light px-4 py-2 rounded-lg text-sm font-medium hover:bg-sand-light/10 transition-all"
+                                >
+                                    Call Us
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -104,6 +114,21 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
+            {/* Floating WhatsApp Button */}
+            <a
+                href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20book%20a%20stay%20at%20Saptashringa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg transition-all"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.5 3.5A11.8 11.8 0 0012.02 0C5.4 0 .02 5.38.02 12c0 2.1.55 4.15 1.6 5.97L0 24l6.18-1.6A11.96 11.96 0 0012.02 24c6.62 0 12-5.38 12-12 0-3.2-1.25-6.2-3.52-8.5z"/>
+                </svg>
+            
+                <span className="hidden sm:inline text-sm font-medium">
+                    Chat with us
+                </span>
+            </a>
         </footer>
     );
 };

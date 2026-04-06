@@ -96,9 +96,11 @@ export const Header = () => {
                                     {link.name}
                                 </a>
                             ))}
+                           <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
                             <Button variant="hero" size="lg" className="mt-4">
-                                Book Now
+                                Contact Us for Best Offers
                             </Button>
+                        </a>
                         </nav>
                     </motion.div>
                 )}

@@ -12,21 +12,21 @@ const galleryImages = [
 
 const testimonials = [
     {
-        name: "Priya & Arun",
-        location: "Mumbai",
+        name: "Travel Atithi",
+        location: "Patna",
         text: "We had a wonderful and memorable stay at Saptashringa Holiday Home. We truly enjoyed every moment there. The staff is extremely friendly, polite, and well-behaved, making us feel comfortable throughout our stay. The rooms are luxurious, well-maintained, and offer a beautiful experience. The swimming pool is quite spacious and definitely one of the key highlights of the property. One of the most amazing features is the breathtaking view — you can clearly see all seven Shivalik mountain peaks right from your room, which makes the stay even more special. A special mention to Chef Ramkrishna, who is an amazing person and served delicious food with great care. Manager Mukesh ji is truly a gem of this hotel, always helpful and attentive. Lastly, heartfelt thanks to the owners, Mr. and Mrs. Singh, who are wonderful, humble, and down-to-earth people. Overall, it was a fantastic experience, and we would highly recommend this place to everyone looking for a peaceful and luxurious stay.",
         rating: 5,
     },
     {
-        name: "Michael Chen",
-        location: "Singapore",
-        text: "As a wildlife photographer, I've stayed at many lodges. Valmiki Wilderness stands out for its authentic eco-practices and incredible access to pristine forest trails.",
+        name: "K.K. Sahu",
+        location: "Muzaffarpur",
+        text: "Excited to review this place. An amazing experience — I never thought this would be available before I came. Italian architecture, a wide garden inside the campus, barbecue facilities, and the personal care give a lovely, cozy, homely, international feeling. The food and the chef are extraordinarily good. The quiet presence of the lady owner managing everything in the background makes this place even more homely — an added attraction. I love this resort very much.",
         rating: 5,
     },
     {
-        name: "The Sharma Family",
-        location: "Delhi",
-        text: "Our kids learned more about nature in three days here than in years of textbooks. The staff treated us like family. An experience our children will never forget.",
+        name: "Avinash Vishwakarma",
+        location: "Patna",
+        text: "Panaromic scene of shivaliks, good food, well behaved staffs, homely environment",
         rating: 5,
     },
 ];

@@ -57,7 +57,7 @@ export const HeroSection = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 1.1 }}
-                        className="flex flex-col sm:flex-row gap-4 justify-center"
+                        className="flex flex-col sm:flex-row gap-4 justify-center items-center"
                     >
                             <a href="https://www.makemytrip.com/hotels/hotel-details/?checkin=date_7&checkout=date_8&city=abc&country=in&currency=INR&filterData=FREE_BREAKFAST_AVAIL%7CBREAKFAST_AVAIL&hotelId=202603242221084502&locusId=abc&locusType=city&roomStayQualifier=2e0e&source=INGO" target="_blank" rel="noopener noreferrer">
                                 <Button variant="hero" size="xl" className="flex items-center gap-2">

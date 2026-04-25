@@ -12,7 +12,7 @@ const values = [
     {
         icon: Heart,
         title: "Warm Hospitality",
-        description: "Personalized service that feels like family, not a hotel with ",
+        description: "Personalized service that feels like family, not a hotel ",
     },
     {
         icon: Users,

@@ -13,7 +13,7 @@ export const Footer = () => {
                                 Saptashringa
                             </h3>
                             <p className="text-sand-light/60 text-sm leading-relaxed mb-6">
-                                An eco-luxury retreat at the doorstep of one of India's last
+                                An eco-luxury retreat at the doorstep of one of Bihar's last
                                 remaining tiger habitats. Experience the wild, responsibly.
                             </p>
                             <div className="flex gap-4">

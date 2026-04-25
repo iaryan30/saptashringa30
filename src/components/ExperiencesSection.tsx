@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { Camera, Compass, UtensilsCrossed, Bird } from "lucide-react";
 import safariImage from "@/assets/safari-experience.jpg";
 import diningImage from "@/assets/dining-experience.jpg";
-
+import PhotoWalkImage from "@/assets/IMG_20250527_001219.jpg";
 const experiences = [
     {
         icon: Compass,
@@ -30,7 +30,7 @@ const experiences = [
         icon: Camera,
         title: "Photography Walks",
         description: "Capture the golden hour magic with our in-house photography guide",
-        image: null,
+        image: PhotoWalkImage,
         duration: "2 hours",
     },
 ];
